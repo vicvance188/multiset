@@ -1,6 +1,6 @@
 package pobj.multiset;
 
-public interface MultiSet<T> {
+public interface MultiSet<T> extends Iterable<T>{
 	public boolean add(T e, int count);
 	public boolean add(T e);
 	public boolean remove(Object e);
