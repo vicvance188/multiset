@@ -1,14 +1,18 @@
 package pobj.multiset;
 
+import java.util.AbstractCollection;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
-public class HashMultiSet<T> implements MultiSet<T>{
+public class HashMultiSet<T> extends AbstractCollection<T> implements MultiSet<T>{
   
   private Map<T, Integer> multiset;
   int taille;
-  
   /**
    * constructeur sans argument
    * construit un multiset vide 
@@ -18,7 +22,6 @@ public class HashMultiSet<T> implements MultiSet<T>{
     this.multiset = new HashMap<T, Integer>();
     this.taille = 0;
   }
-  
   /**
    * constructeur de copie
    * initialise un multiset avec le contenu de la collection
@@ -32,7 +35,6 @@ public class HashMultiSet<T> implements MultiSet<T>{
     for(T key:collection) {
       add(key);
     }
-    
   }
   
   
@@ -137,5 +139,80 @@ public class HashMultiSet<T> implements MultiSet<T>{
   public int size() {
     // TODO Auto-generated method stub
     return taille;
+  }
+  
+  @Override
+  public Iterator<T> iterator() {
+        return new HashMultiSetIterator(multiset);
+  }
+  
+  public List<T> elements(){
+    List<T> list = new ArrayList<T>();
+    for(T t : multiset.keySet()) {
+      list.add(t);
+    }
+    return list;
+  }
+  
+  public int compareTo(Object o1, Object o2) {
+    T t1 = (T) o1;
+    T t2 = (T) o2;
+    return compareTp(t1.count(), t2.count());
+  }
+
+  
+  //#######################################
+  //# ITERATEUR
+  //#######################################
+  /**
+   * Classe interne à HashMultiSet présentant son itérateur
+   *
+   */
+  public class HashMultiSetIterator<T> implements Iterator<T> {
+    private Iterator<Entry<T, Integer>> iterateur;  // Map.Entry correspond à la valeur et la clé d'un element de notre
+                                                    // ensemble
+    // ici l'iterateur itere sur les valeurs et clé d'un map
+    int               current = 0;    /** nombre d'itération (nombre d'occurence de l'element) */
+    T                 elt;            /** elt qui sera retourné par next*/
+    Entry<T, Integer> entree;         /** element iterant de l'iterateur*/
+
+    /**
+     * constructeur de notre iterateur
+     * @param multiset notre multiset
+     */
+    public HashMultiSetIterator(Map<T, Integer> multiset) {
+      iterateur = multiset.entrySet().iterator(); // creation de l'iterateur sur les entrées du multiset
+    }
+
+    /* (non-Javadoc)
+     * @see java.util.Iterator#hasNext()
+     * verifie s'il y a un element qui n'a pas encore ete parcouru
+     */
+    @Override
+    public boolean hasNext() {
+      if (current == 0)
+        return iterateur.hasNext();
+      return true;
+    }
+
+    /* (non-Javadoc)
+     * @see java.util.Iterator#next()
+     * renvoie l'element suivant
+     */
+    @Override
+    public T next() {
+      if (current == 0) {             // verifie qu'on a bien itéré 'count' fois 'e'
+        if (iterateur.hasNext()) {    // verifie qu'il reste des elements non exploré
+          entree = iterateur.next();  // prends le prochain element
+          elt = entree.getKey();      // recupere la clé du l'element actuel
+          current = entree.getValue();// recupere 'count' de 'e' pour le nombre d'itération
+        } else {
+          //throw new pasDelementException();
+        }
+      }
+
+      current--;                    // decremente le nombre de fois ou elt sera renvoyé
+      return elt;                   // elt renvoyé par next
+    }
   }
 }
