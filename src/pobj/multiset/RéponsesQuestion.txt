@@ -1,8 +1,0 @@
-2. Lisez la documentation deAbstractCollectionsur le site Java 8 d’Oracle.  
-	Déterminez, pour chacune des méthodes fournies par AbstractCollection et que nous ne redéfinissons
-	pas dans HashMultiSet, si elle a bien le comportement souhaité et fournit une implantation optimale
-	en terme d’efficacité ; corrigez si nécessaire.  
- 	Y-a-t-il des méthodes définies dansHashMultiSet<T> mais dont nous aurions pu nous passer 
- 	car elles sont déjà définies correctement dansAbstractCollection?
- 
- 
