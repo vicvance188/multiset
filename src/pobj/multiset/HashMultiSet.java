@@ -159,6 +159,8 @@ public class HashMultiSet<T> extends AbstractCollection<T> implements MultiSet<T
   public Comparator<T> getComp(){
 	  return comp;
   }
+  
+  
 
 
   
