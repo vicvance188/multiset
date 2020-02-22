@@ -3,6 +3,7 @@ package pobj.multiset;
 import java.util.AbstractCollection;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -13,6 +14,7 @@ public class HashMultiSet<T> extends AbstractCollection<T> implements MultiSet<T
   
   private Map<T, Integer> multiset;
   int taille;
+  private Comparator <T> comp;
   /**
    * constructeur sans argument
    * construit un multiset vide 
@@ -61,8 +63,8 @@ public class HashMultiSet<T> extends AbstractCollection<T> implements MultiSet<T
   @Override
   public boolean add(Object e) {      // cf  méthode add précédente, mais avec count = 1
     T key = (T) e;
-    if(!multiset.containsKey(key)) {
-      multiset.put(key, multiset.get(key));
+    if(!multiset.containsKey(key)){
+      multiset.put(key, 1);
     }else {
       multiset.put(key, multiset.get(key)+1);
     }
@@ -154,11 +156,10 @@ public class HashMultiSet<T> extends AbstractCollection<T> implements MultiSet<T
     return list;
   }
   
-  public int compareTo(Object o1, Object o2) {
-    T t1 = (T) o1;
-    T t2 = (T) o2;
-    return compareTp(t1.count(), t2.count());
+  public Comparator<T> getComp(){
+	  return comp;
   }
+
 
   
   //#######################################

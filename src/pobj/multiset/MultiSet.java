@@ -1,6 +1,7 @@
 package pobj.multiset;
 
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.List;
 
 public interface MultiSet<T> extends Collection<T>, Iterable<T>{
@@ -12,4 +13,5 @@ public interface MultiSet<T> extends Collection<T>, Iterable<T>{
 	public void clear();	
 	public int size();
 	public List<T> elements();
+	public Comparator<T> getComp();
 }
