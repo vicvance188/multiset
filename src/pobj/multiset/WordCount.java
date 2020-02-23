@@ -38,10 +38,11 @@ public class WordCount {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+		/*
 		Chrono chronoHash = new Chrono();
 		wordcount(msHash);
 		chronoHash.stop();
+		*/
 		
 		Chrono chronoNaive = new Chrono();
 		wordcount(msNaif);
@@ -50,6 +51,9 @@ public class WordCount {
 
 	public static void wordcount(MultiSet<String> ms) {
 		List<String> listElem = ms.elements();
+		/*for(String item : listElem) {
+			System.out.println(item);
+		}*/
 		Comparateur.setMs(ms);
 		Collections.sort(listElem, Comparateur.Instance);
 		for (int i = 0; i < 10; i++) {
