@@ -8,6 +8,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import pobj.util.Chrono;
+
 public class WordCount {
 
 	/**
@@ -16,8 +18,10 @@ public class WordCount {
 	 * @throws Exception FileNotFoundException, IOException
 	 */
 	public static void main(String[] args) throws Exception {
-		MultiSet<String> ms = new HashMultiSet<String>();
-		String file = "C:\\Users\\alioc\\git\\multiset\\data\\WarAndPeace.txt";
+		MultiSet<String> msHash = new HashMultiSet<String>();
+		MultiSet<String> msNaif = new NaiveMultiSet<String>();
+
+		String file = "data/WarAndPeace.txt";
 		BufferedReader br = new BufferedReader(new FileReader(file));
 		try {
 			String line;
@@ -26,14 +30,22 @@ public class WordCount {
 				for (String word : line.split("\\P{L}+")) {
 					if (word.equals(""))
 						continue;
-					ms.add(word); // Ajout du mot dans ms
+					msHash.add(word); // Ajout du mot dans ms
+					msNaif.add(word); 
 				}
 			}
 			br.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		wordcount(ms);
+		
+		Chrono chronoHash = new Chrono();
+		wordcount(msHash);
+		chronoHash.stop();
+		
+		Chrono chronoNaive = new Chrono();
+		wordcount(msNaif);
+		chronoNaive.stop();
 	}
 
 	public static void wordcount(MultiSet<String> ms) {
@@ -43,6 +55,9 @@ public class WordCount {
 		for (int i = 0; i < 10; i++) {
 			System.out.println(listElem.get(i));
 		}
+		/*for(String word : ms) {
+			System.out.println(word);
+		}*/
 	}
 
 	static class Comparateur implements Comparator<String>{
@@ -51,25 +66,7 @@ public class WordCount {
 		public static void setMs(MultiSet<String> ensemble) {ms=ensemble;}
 		@Override
 		public int compare(String arg0, String arg1) {
-			return Integer.compare(ms.count(arg0), ms.count(arg1));
+			return Integer.compare(ms.count(arg1), ms.count(arg0));
 		}
 	}
 }
-
-/*
- * private static void wordcount(MultiSet<String> ms) throws Exception {
- * 
- * 
- * try { String file = "data/WarAndPiece.txt"; BufferedReader br = new
- * BufferedReader(new FileReader(file)); String line; while ((line =
- * br.readLine()) != null) { for (String word : line.split("\\P{L}+")) { if
- * (word.equals("")) continue; ms.add(word); // Ajout du mot dans ms } }
- * br.close(); } catch (Exception e) { e.printStackTrace(); } List<String>
- * listElem = ms.elements(); // liste des mots sans doublons
- * listElem.sort(ms.getComp()); // pour le tri, utilisé la methode count for
- * (int i = 0; i < 10; i++) { System.out.println(listElem.get(i)); } }
- * 
- * public static void madain(String[] args) { MultiSet ms = new HashMultiSet();
- * file = "data/WarAndPiece.txt"; try { wordcount(ms); } catch (Exception e) {
- * e.printStackTrace(); } } }
- */
