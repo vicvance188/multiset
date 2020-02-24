@@ -14,7 +14,6 @@ public class WordCount {
 
 	/**
 	 * charger le fichier ligne par ligne te le découper en mots
-	 * 
 	 * @throws Exception FileNotFoundException, IOException
 	 */
 	public static void main(String[] args) throws Exception {
