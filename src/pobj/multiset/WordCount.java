@@ -37,15 +37,16 @@ public class WordCount {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		/*
+		
 		Chrono chronoHash = new Chrono();
 		wordcount(msHash);
 		chronoHash.stop();
-		*/
 		
+		/*
 		Chrono chronoNaive = new Chrono();
 		wordcount(msNaif);
 		chronoNaive.stop();
+		*/
 	}
 
 	public static void wordcount(MultiSet<String> ms) {

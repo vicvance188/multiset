@@ -1,0 +1,68 @@
+ A combien d'ects dois-je m'inscrire par semestre ?
+
+Un semestre est complet lorsqu'il regroupe des UE pour exactement 30 ects.
+Puis-je prendre une UE de sport pour valider mon semestre ?
+
+Non, votre semestre doit être composé uniquement des UE proposées dans le programme de la licence d'informatique. Si vous suivez une UE de sport, elle sera hors contrat.
+Est-ce que je peux m'inscrire à une UE libre, dans une autre discipline ?
+
+Non, vous ne pouvez pas vous inscrire à une UE libre d'une autre discipline, même si elle est hors contrat.
+Est-ce que je peux m'inscrire à plus de 30 ects ?
+
+Oui, il est possible de vous inscrire à plus de 30 ects si votre département de formation l'autorise. Vous devez donc demander l'accord de la direction des études.
+Je souhaite changer de groupe ou d'UE comment dois je faire ?
+
+Il est possible de changer de groupe de TD/TME ou d'UE pendant les deux premières semaines d'enseignement. Le changement de groupe à l'intérieur d'une UE s'effectue en ligne.
+
+Le changement d'UE s'effectue auprès du secrétariat et nécessite une lettre de motivation et un avis favorable de la direction des études.
+Y a-t-il des UE obligatoires ?
+
+Oui, certaines UE sont obligatoires.
+
+    L2-S3 : OIP (orientation et insertion professionnelle - 3 ects) et 2M120 (éléments d'arithmétique - 3 ects)
+    L2-S4 : anglais (3 ects) et une UE à 3 ects au choix parmi 2I016, 2I017 et 2M150
+    L3-S5 : anglais (3 ects) et 3I006 (logique - 3 ects)
+    L3-S6 : pas d'UE obligatoire
+
+Pour compléter votre contrat à 30 ects, il n'y a pas d'UE obligatoire mais certaines UE sont fondamentales. Votre choix d'UE dépendra de votre projet de poursuites d'études ou professionnel après la licence. Le département de licence organise des permanences d'orientation lors des inscriptions pédagogiques pour conseiller les étudiants dans leurs choix d'UE. Ces permanences sont assurées par des enseignants. N'hésitez pas à venir les rencontrer.
+
+En cas de redoublement dois-je repasser la totalité de mes UE ?
+
+Non, vous ne devez repasser que les UE non validées. Lors de votre inscription, vous devez vous assurer de vous inscrire à suffisamment d'UE pour que votre semestre contienne 30 ECTS.
+Il me manque 2 UE pour valider ma licence, est-ce que je peux prendre plus d'UE ?
+
+Oui il est possible et même recommandé de vous inscrire à plus d'UE, dans la limite de 30 ects.
+Je n'ai pas validé ou compensé mon premier semestre, est-ce que je peux m'inscrire au second ?
+
+Oui, les résultats du premier semestre n'entrent pas en ligne de compte pour les choix d'UE du second semestre. Vérifiez cependant que vous avez bien les pré-requis. Vous pouvez aussi vous inscrire à moins d'UE pour vous concentrer sur quelques-unes et les obtenir.
+
+Le département de licence organise des permanences d'orientation lors des inscriptions pédagogiques pour conseiller les étudiants dans leurs choix d'UE. Ces permanences sont assurées par des enseignants. N'hésitez pas à venir les rencontrer.
+Comment est calculée la note finale d'UE ?
+
+Chaque UE du cycle L d'informatique produit deux notes : une note d'examen et une note de contrôle continu. La note de contrôle continu peut résulter du total de plusieurs contrôles. Les notes d'examen et de contrôle continu sont combinées pour former la note finale d'UE. Consultez le barème des UE dans l'Espace Etudiants.
+
+En seconde session, la note de contrôle continu n'est prise en compte que si elle vous est favorable. Si la note d'examen de seconde session est meilleure, seule cette dernière compte pour le calcul de la note finale.
+Est-ce que je peux repasser une UE validée ?
+
+Non, les UE validées (note égale ou supérieure à 10/20) le restent et ne peuvent pas être repassées.
+J'ai compensé mon semestre, est-ce que je peux repasser les UE non validées ?
+
+Pour pouvoir repasser une UE non validée mais compensée, vous devez renoncer à la compensation. Vous devez déposer une demande écrite au secrétariat dès l'affichage des procès-verbaux de première session et avant les examens de deuxième session. Dans ce cas vous êtes déclaré non admis et vous devez repasser toutes les UE non acquises lors de la première session.
+Je n'ai pas compensé mon semestre, est-ce que la seconde session est obligatoire ?
+
+Oui, vous devez passer l'épreuve de seconde session pour toutes les UE non validées ; la note obtenue à l'examen de seconde session remplace celle de première session (le contrôle continu reste constant). En cas d'absence à la deuxième session la note d'écrit sera égale à zéro.
+Je suis en parcours bi-disciplinaire et je souhaite changer, est-ce possible ?
+
+Oui, vous pouvez toujours revenir dans un parcours monodisciplinaire de la majeure suivie.
+
+Si vous suivez un parcours bi-disciplinaire intensif, vous pouvez revenir dans un parcours bi-disciplinaire des deux mêmes disciplines ou dans un parcours monodisciplinaire d'une des deux disciplines.
+
+Entre les deux semestres de l'année de L2, vous pouvez inverser vos discsiplines majeure et mineure.
+
+Dans tous les cas, vous devez en faire la demande auprès du département de licence avant les inscriptions pédagogiques du semestre suivant et elle ne pourra être satisfaite que dans la limite des places disponibles dans le parcours demandé.
+Je n'ai pas validé mon année de L1 (respectivement L2), puis-je m'inscrire à des UE de L2 (respectivement L3)?
+
+Non, pour pouvoir vous inscrire à des UE de L2 (respectivement L3), il faut avoir validé votre année de L1 (respectivement L2).
+J'ai une question qui n'est pas dans la liste, à qui la poser ?
+
+Vous pouvez poser votre question au secrétariat de la licence d'informatique pendant les heures d'accueil des étudiants.
