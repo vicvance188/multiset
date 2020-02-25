@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
 
-public interface MultiSet<T> extends Collection<T>, Iterable<T>{
+public interface MultiSet<T> extends Iterable<T>, Collection<T> {
 	public boolean add(T e, int count);
 	public boolean add(T e);
 	public boolean remove(Object e);
