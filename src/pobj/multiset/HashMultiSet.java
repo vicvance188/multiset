@@ -3,7 +3,6 @@ package pobj.multiset;
 import java.util.AbstractCollection;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -15,7 +14,6 @@ public class HashMultiSet<T> extends AbstractCollection<T> implements MultiSet<T
 
   private Map<T, Integer> multiset;
   int taille;
-  private Comparator <T> comp;
   /**
    * constructeur sans argument
    * construit un multiset vide
@@ -120,10 +118,6 @@ public class HashMultiSet<T> extends AbstractCollection<T> implements MultiSet<T
       list.add(t);
     }
     return list;
-  }
-
-  public Comparator<T> getComp(){
-	  return comp;
   }
 
 

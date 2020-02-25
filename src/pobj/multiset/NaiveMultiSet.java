@@ -3,14 +3,12 @@ package pobj.multiset;
 import java.util.AbstractCollection;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
 public class NaiveMultiSet<T> extends AbstractCollection<T> implements MultiSet<T> {
 
 	private List<T> multiset;
-	private Comparator<T> comp;
 
 	/**
 	 * constructeur sans argument construit un multiset vide
@@ -116,9 +114,6 @@ public class NaiveMultiSet<T> extends AbstractCollection<T> implements MultiSet<
 		return list;
 	}
 
-	public Comparator<T> getComp() {
-		return comp;
-	}
 
 	// #######################################
 	// # ITERATEUR

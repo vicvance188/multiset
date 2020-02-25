@@ -13,5 +13,4 @@ public interface MultiSet<T> extends Iterable<T>, Collection<T> {
 	public void clear();
 	public int size();
 	public List<T> elements();
-	public Comparator<T> getComp();
 }
