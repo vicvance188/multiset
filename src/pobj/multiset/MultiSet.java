@@ -10,7 +10,7 @@ public interface MultiSet<T> extends Collection<T>, Iterable<T>{
 	public boolean remove(Object e);
 	public boolean remove(Object e, int count);
 	public int count(T o);
-	public void clear();	
+	public void clear();
 	public int size();
 	public List<T> elements();
 	public Comparator<T> getComp();
