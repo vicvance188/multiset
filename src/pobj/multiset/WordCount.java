@@ -37,6 +37,7 @@ public class WordCount {
 	 */
   public static void wordcount(MultiSet<String> ms) throws FileNotFoundException, IOException{
 		String file = "data/WarAndPeace.txt";
+		// String file = "data/petittexte.txt";
 		BufferedReader br = new BufferedReader(new FileReader(file));
   	String line;
   	try {
